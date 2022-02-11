@@ -1,8 +1,8 @@
 package algorithms;
 
-public class SequintialSearch {
+public class SequentialSearch {
     // Check dengan menampilkan indeks data nya
-    static int sequintialCheckIndex(int listData[], int data) {
+    static int sequentialCheckIndex(int listData[], int data) {
         for (int i = 0; i < listData.length; i++) {
             if (data == listData[i]) {
                 return i;
@@ -12,7 +12,7 @@ public class SequintialSearch {
     }
 
     // Check dengan boolean
-    static boolean sequintialCheck(int listData[], int data) {
+    static boolean sequentialCheck(int listData[], int data) {
         for (int i = 0; i < listData.length; i++) {
             if (data == listData[i]) {
                 return true;
@@ -25,7 +25,7 @@ public class SequintialSearch {
         int listData[] = { 12, 33, 5, 7, 9, 10 };
         int data = 10;
 
-        System.out.println(sequintialCheck(listData, data));
-        System.out.println(sequintialCheckIndex(listData, data));
+        System.out.println(sequentialCheck(listData, data));
+        System.out.println(sequentialCheckIndex(listData, data));
     }
 }
